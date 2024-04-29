@@ -1,7 +1,4 @@
 function solution(s) {
-    var answer = '';
-    let result = s.split(" ");
-    let result2 = result.map((x)=>x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
-    answer = result2.join(" ")
-    return answer;
+    let arr = s.split(" ").map((s)=> s.charAt(0).toUpperCase()+s.slice(1).toLowerCase()).join(" ");
+    return arr;
 }
